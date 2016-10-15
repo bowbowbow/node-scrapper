@@ -1,0 +1,55 @@
+{
+  "name": "node-scrapper",
+  "version": "0.0.1",
+  "private": true,
+  "description": "node-scrapper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bowbowbow/node-scrapper.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "build-dev-server": "webpack --progress --colors --config ./webpack/dev-server.config.js",
+    "watch-dev-server": "webpack --watch --progress --colors --config ./webpack/dev-server.config.js",
+    "start-dev-server": "set NODE_ENV=local && node server/index.js",
+    "server": "NODE_ENV=production nodejs app.js"
+  },
+  "author": "Seungwon Youn",
+  "license": "BSD",
+  "dependencies": {
+    "async": "*",
+    "body-parser": "*",
+    "composable-middleware": "*",
+    "connect-mongodb-session": "*",
+    "consistent-hashing": "^0.3.0",
+    "cookie-parser": "*",
+    "domain": "*",
+    "ejs": "*",
+    "express": "*",
+    "express-session": "*",
+    "forever-monitor": "*",
+    "generate-key": "*",
+    "html-metadata": "^1.4.4",
+    "jsonwebtoken": "*",
+    "lodash": "*",
+    "method-override": "*",
+    "moment": "*",
+    "mongodb-backup": "*",
+    "mongoose": "*",
+    "nconf": "*",
+    "node-jsdom": "^3.1.5",
+    "node-schedule": "*",
+    "redis": "^2.6.2",
+    "time": "*",
+    "utf8": "*",
+    "winston": "*"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-mocha": "^4.0.0",
+    "mocha": "^2.4.5",
+    "superagent": "^2.1.0"
+  }
+}
