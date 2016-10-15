@@ -1,0 +1,4 @@
+- include: install_develop.yml
+- include: install_nginx.yml
+- include: install_redis.yml
+- include: deploy.yml
