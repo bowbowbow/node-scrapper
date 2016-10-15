@@ -1,2 +1,20 @@
-node_modules/**/*
-.idea
+*.sublime-project
+*.sublime-workspace
+
+# WebStorm 설정 파일
+.idea/
+
+# Log 파일
+server/logs/
+*.log
+
+# Modules
+/node_modules/
+
+# Build
+server/public/assets/scripts
+server/public/build/
+
+*-compiled.js
+
+*.map
